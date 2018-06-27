@@ -1,0 +1,5 @@
+.footer {
+  @include row-flex();
+
+  @include fntMuseo100();
+}

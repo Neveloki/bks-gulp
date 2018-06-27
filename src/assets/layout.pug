@@ -1,0 +1,28 @@
+include ../../../node_modules/bempug/index
+- BEMPUG.modifier = '_';
+include blocks
+
+block data
+
+if !page
+    block content
+else
+    doctype
+    html(lang='ru')
+        head
+            meta(charset='utf-8')
+            meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+            title=( page.title || 'Title' )
+            meta(name='description' content=( page.description || 'Description' ))
+
+            link(rel="stylesheet" href="css/plugins.min.css")
+            link(rel="stylesheet" href="css/styles.min.css")
+
+        body
+            #svg-sprite(class='svg-sprite' data-src='images/sprite.svg')
+
+            +b('page', {}, 'main')(role= 'main')
+                block content
+
+            script(src="js/plugins.min.js")
+            script(src="js/script.min.js")

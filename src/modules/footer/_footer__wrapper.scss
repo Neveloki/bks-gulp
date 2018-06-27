@@ -1,0 +1,10 @@
+.footer {
+  &__wrapper {
+    @include col();
+
+    @include shift-left(2);
+    @include size-xxs(8);
+
+    padding: 20px 0;
+  }
+}

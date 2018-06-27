@@ -1,0 +1,18 @@
+.header {
+  &__wrapper {
+    @include col();
+    @include size-xxs(12);
+
+    height: 500px;
+    padding: 30px 0;
+
+    text-align: center;
+    @include fntMuseo100(40px);
+    text-transform: uppercase;
+
+    background-image: url('../images/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}

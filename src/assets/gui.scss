@@ -1,0 +1,21 @@
+$font-size-18: 18px;
+
+$fntSize_basic: $font-size-18;
+
+@mixin fntMuseo100($fntSize: $fntSize_basic, $ltrSpacing: 0.4px) {
+  font-family: "MuseoSans 100", "sans-serif";
+  letter-spacing: $ltrSpacing;
+  font-size: $fntSize;
+  -webkit-font-smoothing: antialiased;
+}
+
+$white: #fff;
+$black: #000;
+
+$colorDark: $black;
+
+$colorLight: $white;
+
+$interval: 300ms;
+
+

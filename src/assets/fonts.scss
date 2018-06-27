@@ -1,0 +1,16 @@
+@mixin webFont($family, $file, $weight: normal, $style: normal, $path: '../fonts/') {
+  @font-face {
+    font-family: $family;
+    src: url($path + $file + '.eot');
+    src: url($path + $file + '.eot?#iefix') format('embedded-opentype'),
+    url($path + $file + '.woff2') format('woff2'),
+    url($path + $file + '.woff') format('woff'),
+    url($path + $file + '.ttf') format('truetype'),
+    url($path + $file + '.svg#lgfont') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+    font-stretch: normal;
+  }
+}
+
+@include webFont('MuseoSans 100', 'MuseoSansCyrl-100');

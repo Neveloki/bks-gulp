@@ -1,0 +1,32 @@
+extends blocks/layout
+
+block data
+
+    - const page = {name: 'index', title: 'Главная'};
+
+block content
+
+    +e('section', {}, 'section')
+        +e('container')
+            +b('header')
+                +e('wrapper')
+                    +e('title')= 'Заголовок страницы'
+    +e('section', {}, 'section')
+        +e('container')
+            +b('content')
+                +e('wrapper')
+                    +e('title')= 'Контент страницы'
+    +e('section', {}, 'section')
+        +e('container')
+            +b('footer')
+                +e('wrapper')
+                    +e('title')= 'Подвал страницы'
+                    +b('link', {e: '&'}, 'a')(href= '#')
+                        +b('symbol_twitter', {p: false}, 'svg')
+                            +e('use', {}, 'use')(xlink:href='#symbol_twitter')
+                    +b('link', {e: '&'}, 'a')(href= '#')
+                        +b('symbol_telegram', {p: false}, 'svg')
+                            +e('use', {}, 'use')(xlink:href='#symbol_telegram')
+                    +b('link', {e: '&'}, 'a')(href= '#')
+                        +b('symbol_youtube', {p: false}, 'svg')
+                            +e('use', {}, 'use')(xlink:href='#symbol_youtube')

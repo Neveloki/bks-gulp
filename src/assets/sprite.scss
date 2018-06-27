@@ -1,0 +1,29 @@
+@import "gui.scss";
+
+.symbol_telegram {
+  display: inline-block;
+  fill: currentColor;
+  font-size:35.2*1px;
+  width:35.2*1px;
+  //min-width:35.2*1px;
+  height: 1em;
+  //transition: all $basicInterval;
+}
+.symbol_twitter {
+  display: inline-block;
+  fill: currentColor;
+  font-size:36.9*1px;
+  width:36.8*1px;
+  //min-width:36.8*1px;
+  height: 1em;
+  //transition: all $basicInterval;
+}
+.symbol_youtube {
+  display: inline-block;
+  fill: currentColor;
+  font-size:35.2*1px;
+  width:35.2*1px;
+  //min-width:35.2*1px;
+  height: 1em;
+  //transition: all $basicInterval;
+}

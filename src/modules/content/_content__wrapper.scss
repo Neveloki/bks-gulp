@@ -1,0 +1,15 @@
+.content {
+  &__wrapper {
+    @include col();
+
+    @include shift-left(4);
+    @include size-xxs(4);
+
+    height: 200px;
+
+    text-align: center;
+    @include fntMuseo100(23px);
+
+    border: solid 1px #000;
+  }
+}

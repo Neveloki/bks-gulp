@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@import "normalize";
+@import "../assets/fonts";
+@import "../assets/sprite";
+@import "../assets/gui";
+@import "smart-grid";
+
+body {
+  font-size: $fntSize_basic;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.svg-sprite {
+  display: none;
+}
+
+.state {
+  &_hidden {
+    display: none !important;
+  }
+
+  &_invisible {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+}
